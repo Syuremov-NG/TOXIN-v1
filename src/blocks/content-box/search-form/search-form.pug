@@ -1,0 +1,19 @@
+div(class = 'search-form')
+    div(class = 'search-content')
+        div(class = 'search-content__text el') Найдём номера под ваши пожелания
+        div(class = 'search-content__date el')
+            div(class = 'date-arrive') 
+                div(class = 'content__text') ПРИБЫТИЕ
+                div(class = 'date-dropdown') 
+                    input(class="date-dropdown__input " type="text" placeholder="ДД.ММ.ГГГГ")
+                    div(class="material-icons date-dropdown__arrow") keyboard_arrow_down
+            div(class = 'date-depart') 
+                div(class = 'content__text') ВЫЕЗД
+                div(class = 'date-dropdown depart') 
+                    input(class="date-dropdown__input date-right" type="text" placeholder="ДД.ММ.ГГГГ")
+                    div(class="material-icons date-dropdown__arrow") keyboard_arrow_down
+        div(class = 'content__text') ГОСТИ
+        include ../../dropdowns/dropdown-count/dropdown-count.pug
+        a(href = '#' class = 'search-content__button button-filled') 
+            span(class='search-content__button-text') ПОДОБРАТЬ НОМЕР 
+            span(class="material-icons arrow-forward") arrow_forward

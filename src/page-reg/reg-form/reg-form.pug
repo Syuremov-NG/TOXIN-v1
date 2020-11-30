@@ -1,0 +1,36 @@
+div(class = 'reg-form')
+    div(class = 'reg-form__content')
+        div(class = 'reg-form__text el') Регистрация аккаунта
+        div(class = 'reg-form__inputs')
+            input(class="reg-form__input input" type="text" placeholder="Имя")
+            input(class="reg-form__input input" type="text" placeholder="Фамилия")
+            div(class = "reg-form__inputs-radio")
+                div(class = "form-radio")
+                    input(id = "reg-form__input-man" class="input-radio" type="radio" name = '1' checked)
+                    label(for = "reg-form__input-man") Мужчина
+                    
+                div(class = "form-radio")        
+                    input(id = "reg-form__input-woman" class="input-radio" type="radio" name = '1')
+                    label(for = "reg-form__input-woman") Женщина
+
+        div(class = 'reg-form__date')
+            div(class = 'reg-text') ДАТА РОЖДЕНИЯ
+            div(class = 'reg-date')
+                input(class="date-dropdown__input date-dropdown" type="text" placeholder="ДД.ММ.ГГГГ")
+        
+        div(class = 'reg-text') ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+        div(class = 'reg-form__inputs reg-form__data')
+            input(class="reg-form__input input" type="text" placeholder="Email")
+            input(class="reg-form__input input" type="text" placeholder="Пароль")
+        
+        div(class = 'reg-form__toggle')
+            include ../../blocks/buttons/toggle.pug
+            span(class = 'toggle-text') Получать спецпредложения
+        
+        a(href = '#' class = 'reg-form__button button-filled el') 
+            span(class='button__text') ПЕРЕЙТИ К ОПЛАТЕ 
+            span(class="material-icons arrow-forward") arrow_forward
+        
+        div(class = "reg-form__create")
+            a(href = "#" class = "create__text") Уже есть аккаунт на Toxin
+            a(href = "#" class = 'create__button button-unfilled') ВОЙТИ

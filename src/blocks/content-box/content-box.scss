@@ -1,0 +1,40 @@
+@import './search-form/search-form.scss';
+.background{
+   position: absolute;
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+}
+.content-box{
+   z-index: 0;
+   position: relative;
+   overflow: hidden;
+   height: 100%;
+}
+
+.content-box__text{
+   width:297px;
+   height:48px;
+   position: absolute;
+   bottom: 18px;
+   font-family: 'Montserrat';
+   text-align: end;
+   line-height: 24px;
+   font-size: 14px;
+   color: rgba(31, 32, 65, 0.75);
+}
+@media screen and (min-width: 1153px){
+   .content-box__text{
+       right: 140px;
+   }
+}
+@media screen and (max-width: 1152px){
+   .content-box__text{
+       right: 10px;
+   }
+}
+@media screen and (max-width: 760px){
+   .content-box__text{
+      opacity: 0;
+   }
+}

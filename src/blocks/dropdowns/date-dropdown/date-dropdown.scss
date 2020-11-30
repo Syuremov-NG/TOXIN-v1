@@ -1,0 +1,155 @@
+@import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
+.date-dropdown{
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    .date-right{
+        margin-right: -2px;
+    }
+    .date-dropdown__arrow{
+        width: 44px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 2px;
+        margin-left: -44px;
+        z-index: 0;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    .date-dropdown__input{
+        background: rgba(0, 0, 0, 0);
+        z-index: 1;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        padding-left: 15px;
+        width: 150px;
+        border: none;
+        &::-webkit-input-placeholder{
+            color: rgba(31, 32, 65, 0.75);
+        }
+        &::-moz-placeholder{
+            color: rgba(31, 32, 65, 0.75);
+        }
+        &:focus-within{
+            outline: none;
+        }
+    }
+}
+//-----------------Календарь------------------
+.datepicker{
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    width: 316px;
+    margin: -5px 2px 0 -1px;
+}
+.datepicker--nav-action{
+    color: rgba(188, 156, 255, 1);
+    margin: 10px;
+    div{
+        margin-top: -5px;
+    }
+}
+.datepicker--nav{
+    border: none;
+}
+.datepicker--pointer{
+    display: none;
+}
+.datepicker--cell{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+    color: rgba(31, 32, 65, 0.5);
+}
+.datepicker--cells{
+    
+    margin: 0 10px;
+}
+.-selected-{
+    border-radius: 50%;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+
+    }
+}
+.datepicker--cell.-range-from-,.datepicker--cell.-range-to-{
+    border-radius: 50%;
+    border: none;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: 0; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+}
+.datepicker--cell.-range-to-{
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -2;
+        border-radius: 0 50% 50% 0;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.25;
+    }
+}
+.datepicker--cell.-range-from-{
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -2;
+        border-radius: 50% 0 0 50%;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.25;
+    }
+}
+.datepicker--cell.-in-range- {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+}
+.datepicker--days-names{
+    margin-left: 10px;
+    margin-right: 17px;
+    font-size: 12px;
+}
+.datepicker--day-name{
+    text-transform: none;
+    color: #BC9CFF;
+    font-weight: bold;
+}
+.datepicker--nav-title{
+    color: #1F2041;
+    font-weight: bold;
+    margin: 20px -20px 25px -20px;
+    font-size: 19px;
+    i{
+        margin-left: 5px;
+        color: #1F2041;
+    }
+}
+.datepicker--buttons{
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    .datepicker--button{
+        margin-left: 16px;
+        justify-content: start;
+        color: rgba(188, 156, 255, 1);
+    }
+}

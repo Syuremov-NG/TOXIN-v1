@@ -1,0 +1,27 @@
+.interactive{
+    margin-left: auto;
+}
+.reg{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    margin-left: 20px;
+}
+$border: 2px;
+.reg__log-In{
+    width: 87px;
+    height: 34px;
+    color: rgba(188, 156, 255, 1);
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+}
+@import '../../buttons/button-unfilled.scss';
+.reg__sign-Up{
+    width: 196px;
+    height: 34px;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 20px 8px 20px; 
+}
+@import '../../buttons/button-filled.scss'

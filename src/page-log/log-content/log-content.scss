@@ -1,0 +1,24 @@
+.log-content{
+    display: flex;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    .container{
+        width: 100%;
+    }
+}
+.log-content__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.background{
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
