@@ -1,9 +1,11 @@
 let dropdown_count__list = document.querySelector('.dropdown_count__list');
 let dropdown_count__button = document.querySelector('.dropdown_count__button');
+let list_content = document.querySelector('.list_content');
 
 dropdown_count__button.onclick = function(){
     dropdown_count__list.classList.toggle('active');
     dropdown_count__button.classList.toggle('active');
+    list_content.classList.toggle('active');
 }
 
 

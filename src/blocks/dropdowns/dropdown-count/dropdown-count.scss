@@ -73,6 +73,10 @@
     }
     .list_content{
         margin: 13px 7px 13px 15px;
+        display: none;
+    }
+    .list_content.active{
+        display: block;
     }
     .dropdown_counters{
         width: 100%;
