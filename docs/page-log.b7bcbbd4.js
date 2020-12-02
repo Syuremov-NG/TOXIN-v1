@@ -19,4 +19,4 @@ var e=document.querySelector(".header__burger"),c=document.querySelector(".heade
 },{}],"XGZ7":[function(require,module,exports) {
 "use strict";require("./connect-jquery"),require("./page-log.scss"),require("./blocks/page-header/header__burger.js"),require("../node_modules/air-datepicker/dist/js/datepicker.min.js");
 },{"./connect-jquery":"sU01","./page-log.scss":"frDs","./blocks/page-header/header__burger.js":"GeQs","../node_modules/air-datepicker/dist/js/datepicker.min.js":"bJdl"}]},{},["XGZ7"], null)
-//# sourceMappingURL=page-log.e65209e7.js.map
+//# sourceMappingURL=page-log.b7bcbbd4.js.map
