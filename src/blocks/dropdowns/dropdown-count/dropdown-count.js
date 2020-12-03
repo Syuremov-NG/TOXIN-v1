@@ -2,10 +2,19 @@ let dropdown_count__list = document.querySelector('.dropdown_count__list');
 let dropdown_count__button = document.querySelector('.dropdown_count__button');
 let list_content = document.querySelector('.list_content');
 
+function toggleClass(){
+    list_content.classList.toggle('active');
+}
+
 dropdown_count__button.onclick = function(){
     dropdown_count__list.classList.toggle('active');
     dropdown_count__button.classList.toggle('active');
-    list_content.classList.toggle('active');
+    if(list_content.classList.contains('active')){
+        setTimeout(toggleClass, 150);
+    }
+    else{
+        list_content.classList.toggle('active');
+    }
 }
 
 

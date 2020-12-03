@@ -48,10 +48,11 @@
     opacity: 1;
     transition: opacity .3s ease 0s, margin-top .1s ease 0s;
 }
+
 .dropdown_count__list{
     margin-top: -6px;
     opacity: 0;
-    transition: opacity .3s ease 0s, margin-top .1s ease 0s;
+    transition: all .3s ease 0s;
     position: relative;
     z-index: 7;
     display: flex;
@@ -68,14 +69,14 @@
     user-select: none; 
     .dropdown_count__list.active{
         margin-top: -1px;
-        opacity: 1;
-        transition: opacity .3s ease 0s, margin-top .1s ease 0s;
+        
     }
     .list_content{
         margin: 13px 7px 13px 15px;
         display: none;
     }
     .list_content.active{
+        opacity: 1;
         display: block;
     }
     .dropdown_counters{
