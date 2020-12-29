@@ -6,7 +6,7 @@ function toggleClass(){
     list_content.classList.toggle('active');
 }
 
-dropdown_count__button.onclick = function(){
+function timeToggle(){
     dropdown_count__list.classList.toggle('active');
     dropdown_count__button.classList.toggle('active');
     if(list_content.classList.contains('active')){
@@ -17,6 +17,9 @@ dropdown_count__button.onclick = function(){
     }
 }
 
+dropdown_count__button.onclick = function(){
+    timeToggle();
+}
 
 let minus_frst = document.querySelector('.minus_frst');
 let minus_scnd = document.querySelector('.minus_scnd');
@@ -173,8 +176,7 @@ let accept_button = document.querySelector('.accept_button');
 let clear_button = document.querySelector('.clear_button');
 
 accept_button.onclick = function(){
-    dropdown_count__list.classList.toggle('active');
-    dropdown_count__button.classList.toggle('active');
+    timeToggle();
 }
 clear_button.onclick = function(){
     if(count_frst !== 0){
