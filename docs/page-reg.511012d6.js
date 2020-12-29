@@ -23,4 +23,4 @@ var e=document.querySelector(".header__burger"),c=document.querySelector(".heade
 },{}],"F5dx":[function(require,module,exports) {
 "use strict";require("./connect-jquery"),require("../node_modules/air-datepicker/dist/js/datepicker.min.js"),require("./blocks/dropdowns/date-dropdown/date-dropdown.js"),require("./page-reg.scss"),require("./blocks/page-header/header__burger.js");
 },{"./connect-jquery":"sU01","../node_modules/air-datepicker/dist/js/datepicker.min.js":"bJdl","./blocks/dropdowns/date-dropdown/date-dropdown.js":"IEIC","./page-reg.scss":"iEay","./blocks/page-header/header__burger.js":"GeQs"}]},{},["F5dx"], null)
-//# sourceMappingURL=page-reg.9eb01344.js.map
+//# sourceMappingURL=page-reg.511012d6.js.map
