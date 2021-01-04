@@ -1,3 +1,4 @@
+
 $('.date-dropdown__input').datepicker({
     clearButton: true,
     navTitles : {
@@ -9,7 +10,9 @@ $('.date-dropdown__input').datepicker({
     nextHtml: '<div class="material-icons">arrow_forward</div>',
     //inline: true,
     range: true,
+    toggleSelected: false,
 })
+
 $('.date-right').datepicker({
     position: "bottom right"
 })

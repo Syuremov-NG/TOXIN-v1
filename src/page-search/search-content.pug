@@ -1,0 +1,24 @@
+div(class = 'search-content')
+    div(class = 'container')
+        div(class = 'search-settings')
+            div(class = 'search-settings__container')
+                div(class = 'setting search-settings__dates')
+                    div(class = 'setting__text') даты пребывания в отеле
+                    div(class = 'date-dropdown') 
+                        input(class="date-dropdown__input " type="text" placeholder="ДД.ММ.ГГГГ")
+                        div(class="material-icons date-dropdown__arrow") keyboard_arrow_down
+                div(class = 'setting search-settings__guests')
+                    div(class = 'setting__text') гости
+                    include ../blocks/dropdowns/dropdown-count/dropdown-count.pug
+                div(class = 'setting search-settings__price')
+                    div(class = 'setting__text') диапазон цены
+                div(class = 'setting search-settings__rules')
+                    div(class = 'setting__text') правила дома
+                div(class = 'setting search-settings__spec')
+                    div(class = 'setting__text') доступность
+                div(class = 'setting search-settings__comfort')
+                    div(class = 'setting__text') удобства номера
+                div(class = 'setting search-settings__add')
+                    div(class = 'setting__text') дополнительные удобства
+        div(class = 'search-grid')
+    
